@@ -1,4 +1,4 @@
-package AutomovelPoo;
+package ProgramacaoOrientadaObjeto;
 
 public class Automovel {
 	private String nomeProprietario;
@@ -47,6 +47,11 @@ public class Automovel {
 
 	public void setAno(int ano) {
 		this.ano = ano;
+	}
+	
+	public void imprimirInfo() {
+		System.out.println(nomeProprietario + " ganhou um(a) " + modelo + " com placa: "
+				+ placa + " e ano " + ano);
 	}
 	
 	
