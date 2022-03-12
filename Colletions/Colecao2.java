@@ -21,7 +21,7 @@ public class Colecao2 {
 			System.out.println("\n(4) Deseja mostrar todos os produtos do estique?");
 			System.out.println("\n(0) Sair.");
 			System.out.println("\n-----------------------------------------");
-			System.out.println("\nDigite uma opÁ„o: ");
+			System.out.println("\nDigite uma op√ß√£o: ");
 			op = ler.nextInt();
 			
 			switch(op) {
@@ -41,7 +41,7 @@ public class Colecao2 {
 					System.out.println("\nO produto: " + removerProduto + "foi removido do estoque.");
 				}
 				else {
-					System.out.println("\nProduto n„o existente!!!");
+					System.out.println("\nProduto n√£o existente!!!");
 				}
 				System.out.println(estoque);
 				break;
@@ -50,7 +50,7 @@ public class Colecao2 {
 				System.out.println("\nDigite o produto a ser atualizado: ");
 				String atualizarProduto = ler.nextLine();
 				String novoProduto = ler.nextLine();
-				System.out.println("\nO produto: " + atualizarProduto + " ser· substituÌdo por: " + novoProduto);
+				System.out.println("\nO produto: " + atualizarProduto + " ser√° substitu√≠do por: " + novoProduto);
 				
 				
 				if(estoque.contains(atualizarProduto)) {
@@ -58,21 +58,22 @@ public class Colecao2 {
 					estoque.add(novoProduto);
 				}
 				else {
-					System.out.println("\nProduto n„o existe.");
+					System.out.println("\nProduto n√£o existe.");
 				}
 				
 				System.out.println(estoque);
 				break;
 			case 4:
-				System.out.println("\nOs produtos do estoque s„o: .");
+				System.out.println("\nOs produtos do estoque s√£o: .");
 				System.out.println(estoque);
 				break;
+				
 			default:
 				if(op == 0) {
 					System.out.println("\nTchau. Sistema finalizado.");
 				}
 				else{
-					System.out.println("\nOpÁ„o inv·lida.");
+					System.out.println("\nOp√ß√£o inv√°lida.");
 				}
 			}
 		}
